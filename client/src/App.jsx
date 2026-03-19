@@ -2,7 +2,9 @@
 import {useState,useEffect} from "react"
 import {io} from "socket.io-client"
 
-const socket = io("https://advanced-chat-app-two.vercel.app")
+const socket = io("https://chat-backend-jont.onrender.com", {
+  transports: ["websocket"]
+})
 
 export default function App(){
 
